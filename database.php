@@ -2,6 +2,7 @@
 
     mysqli_report(MYSQLI_REPORT_STRICT);
 
+    //CONEXÃO COM O BANCO
     function open_database() {
         try {
             $conn = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
@@ -12,6 +13,7 @@
         }
     }
 
+    //FECHAMENTO DA CONEXÃO COM O BANCO
     function close_database($conn) {
         try {
             mysqli_close($conn);
@@ -21,7 +23,7 @@
     }
 
 
-
+    //LISTAR DADOS DE UMA TABELA
     function find( $table = null, $id = null ) {
   
         $database = open_database();
@@ -55,12 +57,12 @@
         return $found;
     }
 
-
+    //LISTAR TODOS OS DADOS DE UMA TABELA 
     function find_all( $table ) {
         return find($table);
       }
 
-
+    //FUNÇÃO GENÉRICA PARA INSERT NO BANCO
     function save($table = null, $data = null) {
 
         $database = open_database();
@@ -74,7 +76,7 @@
             $values .= "'$value',";
         }
         
-        // remove a ultima virgula
+        //RETIRAR A ULTIMA VIRGULA
         $columns = rtrim($columns, ',');
         $values = rtrim($values, ',');
         
@@ -95,6 +97,7 @@
         close_database($database);
     }
 
+    //FUNÇÃO GENÉRICA PARA UPDATE NO BANCO
     function update($table = null, $id = 0, $data = null) {
 
         $database = open_database();
@@ -127,6 +130,7 @@
         close_database($database);
     }
 
+    //FUNÇÃO GENÉRICA PARA DELETE NO BANCO
     function remove( $table = null, $id = null ) {
 
         $database = open_database();

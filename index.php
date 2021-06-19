@@ -1,5 +1,5 @@
 <?php
-    require_once('functions.php');
+    require_once('clientes_functions.php');
     index();
 
     include(HEADER_TEMPLATE); 
@@ -79,7 +79,7 @@
 
         </tr>
 
-        <!-- Modal de Delete-->
+        <!-- Modal View-->
         <div class="modal fade" id="view-modal-id-<?php echo $vCliente['CLIENTE_ID']; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -92,7 +92,7 @@
               <div class="modal-body">
               
                 <?php   
-                    require_once('functions.php'); 
+                    require_once('clientes_functions.php'); 
                 ?>
                 
                 <div class="form-group col-md-7">
@@ -158,13 +158,7 @@
             </div>
           </div>
         </div>
-        <!-- /.modal -->
-
-
-
-
-
-
+        <!-- /.modal View -->
 
 
 

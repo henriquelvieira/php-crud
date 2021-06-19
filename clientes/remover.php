@@ -1,5 +1,5 @@
 <?php 
-  require_once('../functions.php'); 
+  require_once('../clientes_functions.php'); 
 
   if (isset($_GET['id'])){
     delete($_GET['id']);

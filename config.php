@@ -1,30 +1,32 @@
 <?php
 
-/** O nome do banco de dados*/
+//PARAMETRIZAÇÕES DO BANCO DE DADOS
+
+//NOME DA BASE
 define('DB_NAME', 'bd_crud');
 
-/** Usuário do banco de dados MySQL */
+//USUÁRIO
 define('DB_USER', 'root');
 
-/** Senha do banco de dados MySQL */
+//SENHA
 define('DB_PASSWORD', '');
 
-/** nome do host do MySQL */
+//ENDEREÇO
 define('DB_HOST', 'localhost');
 
-/** caminho absoluto para a pasta do sistema **/
+//CAMINHO ABSOLUTO DA PASTA DO SISTEMA
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
 	
-/** caminho no server para o sistema **/
+//CAMINHO DO SERVER
 if ( !defined('BASEURL') )
 	define('BASEURL', '/CRUD-Clientes/');
 	
-/** caminho do arquivo de banco de dados **/
+//CAMINHO DO ARQUIVO PARA CONEXÃO COM O BANCO DE ADOS
 if ( !defined('DBAPI') )
 	define('DBAPI', ABSPATH . 'database.php');
 
-/** caminhos dos templates de header e footer **/
+//CAMINHA DO TEMPLATE (HEADER E FOOTER)
 define('HEADER_TEMPLATE', ABSPATH . 'layout/header.php');
 define('FOOTER_TEMPLATE', ABSPATH . 'layout/footer.php');
 ?>

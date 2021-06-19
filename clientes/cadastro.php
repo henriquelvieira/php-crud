@@ -1,27 +1,28 @@
 <?php 
   
-  require_once('../functions.php'); 
+  require_once('../clientes_functions.php'); 
   
   if (isset($_GET['id'])) {
     edit();   
     $vSexoEdit  = isset($vgCliente['CLIENTE_SEXO']) ? $vgCliente['CLIENTE_SEXO'] : '';
+    $vTitulo = 'Editar Cliente';
 
   } else {
     add(); 
     $vSexoEdit  = '';
+    $vTitulo = 'Novo Cliente';
   }
 
   include(HEADER_TEMPLATE); 
+
+
+  echo '<h2>'. $vTitulo . '</h2>';
 ?>
 
 
-
-<h2>Novo Cliente</h2>
-
 <form action="cadastro.php<?php echo (isset($_GET['id'])) ? '?id='. $vgCliente['CLIENTE_ID'] : '' ?>" method="post">
   
-  
-  <!-- area de campos do form -->
+
   <hr />
   
   <div class="row">
