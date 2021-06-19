@@ -13,9 +13,11 @@ CRUD feito em PHP + MySQL + JavaScript + HTML + CSS + Bootstrap com consumo à A
 ## Configurações:
 
 **Banco de Dados:**
+
 Crie uma base de dados MySQL com o nome *bd_crud* e utilize o arquivo [script_banco.sql](https://github.com/henriquelvieira/php-crud/blob/main/script_banco.sql) para criar a tabela necessária.
 
 **Conexão com o Banco de Dados:**
+
 Para realizar a conexão com o banco de dados via PHP edite o arquivo [config.php](https://github.com/henriquelvieira/php-crud/blob/main/config.php).
 
     define('DB_NAME', 'bd_crud');
@@ -24,6 +26,7 @@ Para realizar a conexão com o banco de dados via PHP edite o arquivo [config.ph
     define('DB_HOST', 'localhost');
 
 ## Estrutura do Projeto
+
 - /layout: Diretório contendo os arquivos de template (Header e Footer);
 - /js: Arquivos JavaScript utilizados no projeto;
 - /assets: Armazenamento de imagens e outros arquivos externos;
