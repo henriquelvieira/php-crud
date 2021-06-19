@@ -61,7 +61,7 @@
         <tr>
             <td><?php echo $vCliente['CLIENTE_ID']; ?></td>
             <td><?php echo $vCliente['CLIENTE_NOME']; ?></td>
-            <td><?php echo $vCliente['CLIENTE_DT_NASC']; ?></td>
+            <td><?php echo date("d/m/Y", strtotime($vCliente['CLIENTE_DT_NASC'])) ; ?></td>
             <td><?php echo $vCliente['CLIENTE_SEXO']; ?></td>
             <td><?php echo $vCliente['CLIENTE_CEP']; ?></td>
             <td><?php echo $vCliente['CLIENTE_ENDERECO']; ?></td>
@@ -107,7 +107,7 @@
 
                 <div class="form-group col-md-7">
                   <label for="campo2"><b>Dt. Nasc:</b></label>
-                  <label for="name"><?php echo $vCliente['CLIENTE_DT_NASC']; ?></label>
+                  <label for="name"><?php echo date("d/m/Y", strtotime($vCliente['CLIENTE_DT_NASC'])) ?></label>
                 </div>
 
                 <div class="form-group col-md-7">
