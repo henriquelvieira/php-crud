@@ -22,4 +22,18 @@ Para realizar a conexão com o banco de dados via PHP edite o arquivo [config.ph
 
 
 ## Imagens
-![Listagem](https://imgur.com/mnbWO60)
+
+**Tela de Listagem**
+![Listagem](https://i.imgur.com/mnbWO60.png)
+
+**Tela de Cadastro**
+![Cadastro](https://i.imgur.com/cmJOtnh.png)
+
+**Visualização dos dados do Cliente (Modal)**
+![Listagem](https://i.imgur.com/5IWnbkr.png)
+
+**Tela de Edição**
+![Edição](https://i.imgur.com/XAwvb2b.png)
+
+**Exclusão de Clientes**
+![Exclusão](https://i.imgur.com/xJ2q3cT.png)
